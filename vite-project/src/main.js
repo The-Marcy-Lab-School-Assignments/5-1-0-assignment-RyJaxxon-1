@@ -1,6 +1,7 @@
 import './style.css'
 import { renderInventory, renderCart } from './utils/render-functions';
 import ShoppingCart from './model/ShoppingCart';
+import getId from "./utils/getId";
 
 const main = () => {
   const myCart = new ShoppingCart();
