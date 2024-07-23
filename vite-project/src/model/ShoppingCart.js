@@ -23,9 +23,18 @@ class ShoppingCart {
             sum += x.price
         })
         return sum;
+        /*
+        FEEDBACK:
+        Great solution here!
+        You could have also utilized reduce here as well! 
+        Just mentioning for future reference. 
+        */
     }
     removeItem(id){
         this.#cartItems = this.#cartItems.filter(item => item.id !== id)
+        /*
+        Nice use of filter here! 
+        */
     }
     static findBy(id) {
         let foundCart = {}
@@ -35,6 +44,11 @@ class ShoppingCart {
             }
         })
         return foundCart
+        /*
+        FEEDBACK: 
+        Great use of a for each here!
+        You could have also used .find to find a specific element in an array!
+        */
     }
     static listAll(){
         return [...ShoppingCart.#allCarts]
